@@ -8,27 +8,7 @@ function Header() {
       <div className="bg-gray-100">
         <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="relative flex items-center justify-between">
-            <Link
-              to="/"
-              aria-label="proReader"
-              title="proReader"
-              className="inline-flex items-center"
-            >
-              <svg
-                className="w-8 text-blue-400"
-                viewBox="0 0 24 24"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                stroke="currentColor"
-                fill="none"
-              >
-                <rect x="3" y="1" width="7" height="12" />
-                <rect x="3" y="17" width="7" height="6" />
-                <rect x="14" y="1" width="7" height="6" />
-                <rect x="14" y="11" width="7" height="12" />
-              </svg>
+            <Link to="/" className="inline-flex items-center">
               <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
                 Quiz Tour
               </span>
@@ -102,27 +82,7 @@ function Header() {
                   <div className="p-5 bg-white border rounded shadow-sm">
                     <div className="flex items-center justify-between mb-4">
                       <div>
-                        <Link
-                          to="/"
-                          aria-label="proReader"
-                          title="proReader"
-                          className="inline-flex items-center"
-                        >
-                          <svg
-                            className="w-8 text-deep-purple-accent-400"
-                            viewBox="0 0 24 24"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeMiterlimit="10"
-                            stroke="currentColor"
-                            fill="none"
-                          >
-                            <rect x="3" y="1" width="7" height="12" />
-                            <rect x="3" y="17" width="7" height="6" />
-                            <rect x="14" y="1" width="7" height="6" />
-                            <rect x="14" y="11" width="7" height="12" />
-                          </svg>
+                        <Link to="/" className="inline-flex items-center">
                           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                             Quiz Tour
                           </span>
