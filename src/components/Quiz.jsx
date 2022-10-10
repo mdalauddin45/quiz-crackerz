@@ -18,7 +18,7 @@ const Quiz = ({ quiz }) => {
           type="button"
           className="px-8 block  py-3 font-semibold rounded-full bg-purple-200 text-gray-800 hover:bg-purple-300"
         >
-          Add To Cart
+          Start Practice
         </button>
       </div>
     </div>
