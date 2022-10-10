@@ -17,8 +17,6 @@ function Header() {
               <li>
                 <NavLink
                   to="/home"
-                  aria-label="Home"
-                  title="Home"
                   className={({ isActive }) =>
                     isActive
                       ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -40,20 +38,7 @@ function Header() {
                   Quiz
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/books"
-                  aria-label="Books"
-                  title="Books"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                      : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                  }
-                >
-                  Books
-                </NavLink>
-              </li>
+
               <li>
                 <NavLink
                   to="/blog"
@@ -124,8 +109,6 @@ function Header() {
                         <li>
                           <Link
                             to="/"
-                            aria-label="Home"
-                            title="Home"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Home
@@ -141,19 +124,7 @@ function Header() {
                         </li>
                         <li>
                           <Link
-                            to="/books"
-                            aria-label="Books"
-                            title="Books"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Books
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
                             to="/blog"
-                            aria-label="About Us"
-                            title="About Us"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Blog

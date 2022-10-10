@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import reader from "../assets/reader.json";
-import Quiz from "./Quiz";
 
 const Home = () => {
   return (
