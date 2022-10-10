@@ -30,7 +30,7 @@ function Header() {
                 <rect x="14" y="11" width="7" height="12" />
               </svg>
               <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
-                proReader
+                Quiz Tour
               </span>
             </Link>
             <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -64,16 +64,14 @@ function Header() {
               </li>
               <li>
                 <NavLink
-                  to="/about"
-                  aria-label="About us"
-                  title="About us"
+                  to="/blog"
                   className={({ isActive }) =>
                     isActive
                       ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                   }
                 >
-                  About us
+                  Blog
                 </NavLink>
               </li>
             </ul>
@@ -126,7 +124,7 @@ function Header() {
                             <rect x="14" y="11" width="7" height="12" />
                           </svg>
                           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                            proReader
+                            Quiz Tour
                           </span>
                         </Link>
                       </div>
@@ -173,12 +171,12 @@ function Header() {
                         </li>
                         <li>
                           <Link
-                            to="/about"
+                            to="/blog"
                             aria-label="About Us"
                             title="About Us"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            About Us
+                            Blog
                           </Link>
                         </li>
                       </ul>
