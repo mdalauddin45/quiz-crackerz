@@ -30,6 +30,18 @@ function Header() {
               </li>
               <li>
                 <NavLink
+                  to="/quizs"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                  }
+                >
+                  Quiz
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/books"
                   aria-label="Books"
                   title="Books"
@@ -117,6 +129,14 @@ function Header() {
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Home
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/quizs"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          >
+                            Quizs
                           </Link>
                         </li>
                         <li>
