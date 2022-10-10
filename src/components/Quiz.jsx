@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Quiz = ({ quiz }) => {
   const { id, logo, name, total } = quiz;
-  console.log(quiz);
+  // console.log(quiz);
   return (
     <div className="bg-gray-100 p-6 rounded shadow-lg">
       <img

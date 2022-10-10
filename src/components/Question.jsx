@@ -1,6 +1,6 @@
 import React from "react";
 import { EyeIcon } from "@heroicons/react/24/solid";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Question = ({ quiz }) => {
@@ -9,14 +9,14 @@ const Question = ({ quiz }) => {
 
   const getAns = (item) => {
     if (item === correctAnswer) {
-      return toast.success("Correct answer!", { autoClose: 500 });
-    } else {
-      return toast.error("Cart is empty", { autoClose: 500 });
+      return toast.success("Correct Answer!", { autoClose: 500 });
     }
+
+    return toast.error("Wrong Answer", { autoClose: 500 });
   };
 
   const showAnswer = () => {
-    alert(correctAnswer);
+    toast.success(`Correct Answer is ${correctAnswer}`, { autoClose: 500 });
   };
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
@@ -26,13 +26,15 @@ const Question = ({ quiz }) => {
             <h2 className="text-2xl font-semibold sm:text-4xl mt-4 mb-10">
               {question}
             </h2>
-            <span
-              onClick={() => {
-                showAnswer();
-              }}
-            >
-              <EyeIcon className="h-6 w-8" />
-            </span>
+            <button>
+              <span
+                onClick={() => {
+                  showAnswer();
+                }}
+              >
+                <EyeIcon className="h-6 w-8" />
+              </span>
+            </button>
           </div>
 
           <div className="space-y-4">
