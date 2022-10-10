@@ -1,16 +1,22 @@
 import React from "react";
 import { EyeIcon } from "@heroicons/react/24/solid";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Question = ({ quiz }) => {
   // console.log(quiz);
-  const { question, correctAnswer, id, options } = quiz;
-  console.log(quiz);
+  const { question, correctAnswer, options } = quiz;
+
   const getAns = (item) => {
     if (item === correctAnswer) {
-      alert("right");
+      return toast.success("Correct answer!", { autoClose: 500 });
     } else {
-      alert("worng");
+      return toast.error("Cart is empty", { autoClose: 500 });
     }
+  };
+
+  const showAnswer = () => {
+    alert(correctAnswer);
   };
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
@@ -20,7 +26,13 @@ const Question = ({ quiz }) => {
             <h2 className="text-2xl font-semibold sm:text-4xl mt-4 mb-10">
               {question}
             </h2>
-            <EyeIcon className="h-8 w-8" />
+            <span
+              onClick={() => {
+                showAnswer();
+              }}
+            >
+              <EyeIcon className="h-6 w-8" />
+            </span>
           </div>
 
           <div className="space-y-4">
@@ -29,7 +41,7 @@ const Question = ({ quiz }) => {
                 <button
                   onClick={() => getAns(item)}
                   key={xid}
-                  className="w-96 border mt-2 rounded-lg px-4 py-4 focus:outline-none focus-visible:ring-violet-400"
+                  className="w-96 border m-2 rounded-lg px-4 py-4 focus:outline-none focus-visible:ring-violet-400"
                 >
                   {item}
                 </button>
