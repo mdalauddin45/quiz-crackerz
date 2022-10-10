@@ -1,11 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Quiz = ({ quiz }) => {
-  const { logo, name } = quiz;
+  const { id, logo, name } = quiz;
+  //   console.log(quiz);
   return (
     <div className="bg-gray-100 p-6 rounded shadow-lg">
       <img
-        className="object-cover w-full h-56 mb-6 rounded shadow-lg md:h-64 xl:h-80"
+        className=" w-full h-56 mb-6 rounded shadow-lg md:h-64 xl:h-80"
         src={logo}
         alt=""
       />
@@ -14,12 +16,12 @@ const Quiz = ({ quiz }) => {
           {name}
         </p>
 
-        <button
-          type="button"
+        <Link
+          to={`../quiz/${id}`}
           className="px-8 block  py-3 font-semibold rounded-full bg-purple-200 text-gray-800 hover:bg-purple-300"
         >
           Start Practice
-        </button>
+        </Link>
       </div>
     </div>
   );
