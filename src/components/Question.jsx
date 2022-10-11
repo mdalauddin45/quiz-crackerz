@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 
 const Question = ({ quizs, correct, setCorrect, setWrong, wrong }) => {
   const { question, correctAnswer, options } = quizs;
+
   const getAns = (item) => {
     if (item === correctAnswer) {
       Swal.fire("Correct Answer!", "You clicked the button!", "success");
@@ -52,7 +53,7 @@ const Question = ({ quizs, correct, setCorrect, setWrong, wrong }) => {
                   <button
                     onClick={() => getAns(item)}
                     key={xid}
-                    className="w-96 border m-2 rounded-lg px-4 py-4 focus:outline-none focus-visible:ring-violet-400"
+                    className="w-96 border m-2 bg-white shadow-xl rounded-lg px-4 py-4 focus:outline-none focus-visible:ring-violet-400"
                   >
                     {item}
                   </button>
