@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Main from "./components/Main";
 import QuizQuantion from "./components/QuizQuantion";
 import Quizs from "./components/Quizs";
+import Statistics from "./components/Statistics";
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home></Home> },
       { path: "/home", element: <Home></Home> },
+      { path: "/statistics", element: <Statistics></Statistics> },
       { path: "/blog", element: <Blog></Blog> },
       {
         path: "/quizs",

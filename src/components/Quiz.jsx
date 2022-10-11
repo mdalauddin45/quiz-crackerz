@@ -22,7 +22,8 @@ const Quiz = ({ quiz }) => {
           to={`../quiz/${id}`}
           className="px-8 flex py-4 font-semibold rounded-full bg-purple-200 text-gray-800 hover:bg-purple-300"
         >
-          Start Practice <ChevronDoubleRightIcon className="h-6 w-8" />
+          Practice Now
+          <ChevronDoubleRightIcon className="h-6 w-8" />
         </Link>
       </div>
     </div>
