@@ -42,6 +42,18 @@ function Header() {
                   Quiz
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/statistics"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                  }
+                >
+                  Statistics
+                </NavLink>
+              </li>
 
               <li>
                 <NavLink
@@ -127,6 +139,14 @@ function Header() {
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Quizs
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/statistics"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          >
+                            Statistics
                           </Link>
                         </li>
                         <li>
