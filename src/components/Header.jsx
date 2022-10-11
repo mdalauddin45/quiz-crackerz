@@ -11,10 +11,12 @@ function Header() {
           <div className="relative flex items-center justify-between">
             <Link to="/" className="inline-flex items-center">
               <span className="ml-2 flex text-xl font-bold tracking-wide text-gray-800">
-                <span>
-                  <AcademicCapIcon className="h-6 w-8" />
-                </span>
-                <p> Quiz Tour</p>
+                <div className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400 text-white-900 mr-2">
+                  <span>
+                    <AcademicCapIcon className="h-6 w-8 text-white" />
+                  </span>
+                </div>
+                <p className="text-2xl mt-1"> Quiz Tour</p>
               </span>
             </Link>
             <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -97,10 +99,12 @@ function Header() {
                       <div>
                         <Link to="/" className="inline-flex items-center">
                           <span className="ml-2 flex text-xl font-bold tracking-wide text-gray-800 uppercase">
-                            <span>
-                              <AcademicCapIcon className="h-6 w-8" />
-                            </span>
-                            <p> Quiz Tour</p>
+                            <div className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400 text-white-900 mr-2">
+                              <span>
+                                <AcademicCapIcon className="h-6 w-8 text-white" />
+                              </span>
+                            </div>
+                            <p className="text-2xl mt-1"> Quiz Tour</p>
                           </span>
                         </Link>
                       </div>
