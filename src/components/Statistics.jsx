@@ -14,7 +14,7 @@ const Statistics = () => {
   const loaderData = useLoaderData();
   const data = loaderData.data;
   return (
-    <div className=" container text-center max-w-xl p-8 shadow-sm lg:p-12  dark:text-gray-900">
+    <div className=" container text-center max-w-xl mt-10 mb-10  lg:p-12  dark:text-gray-900">
       <div className=" w-full">
         <BarChart width={400} height={250} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
