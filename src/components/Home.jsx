@@ -30,7 +30,7 @@ const Home = () => {
               </Link>
               <Link
                 rel="noopener noreferrer"
-                to="#"
+                to="/blog"
                 className="px-8 py-3 text-lg font-semibold border rounded border-gray-100"
               >
                 SEE MORE..
