@@ -47,13 +47,13 @@ const Question = ({ quizs, correct, setCorrect, setWrong, wrong }) => {
               </button>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-4 text-xl">
               <p>
                 {options.map((item, xid) => (
                   <button
                     onClick={() => getAns(item)}
                     key={xid}
-                    className="w-96 border m-2 bg-white shadow-xl rounded-lg px-4 py-4 focus:outline-none focus-visible:ring-violet-400"
+                    className="w-full border m-2 bg-white shadow-xl rounded-lg px-4 py-4 focus:outline-none focus-visible:ring-violet-400"
                   >
                     {item}
                   </button>
