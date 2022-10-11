@@ -26,8 +26,11 @@ Documentation Link -> [Quiz API](https://openapi.programming-hero.com/api/quiz)
 
 ## Resources & Credits
 
-Tailwind Components -> [Kitwind](https://kitwind.io/products/kometa/components)
-
-Tailwind Components -> [Kitwind](https://www.mambaui.com/)
+Tailwind Components -> [Mambaui](https://www.mambaui.com/)
 
 Lottie Animation -> [LottieFiles](https://lottiefiles.com/featured)
+
+⚪ Home page Created
+⚪ Quiz page Created
+⚪ Footer added
+⚪ 404 Error page Created
