@@ -2,8 +2,8 @@ import React from "react";
 import { EyeIcon } from "@heroicons/react/24/solid";
 import Swal from "sweetalert2";
 
-const Question = ({ quiz }) => {
-  const { question, correctAnswer, options, name } = quiz;
+const Question = ({ quizs }) => {
+  const { question, correctAnswer, options, name } = quizs;
   const getAns = (item) => {
     if (item === correctAnswer) {
       Swal.fire("Correct Answer!", "You clicked the button!", "success");

@@ -7,8 +7,8 @@ const QuizQuantion = () => {
   const quizdata = loaderData.data.questions;
   return (
     <div>
-      {quizdata.map((quiz) => (
-        <Question key={quiz.id} quiz={quiz}></Question>
+      {quizdata.map((quizs) => (
+        <Question key={quizs.id} quizs={quizs}></Question>
       ))}
     </div>
   );
