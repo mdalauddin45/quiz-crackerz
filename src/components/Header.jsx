@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AcademicCapIcon } from "@heroicons/react/24/solid";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,8 +10,11 @@ function Header() {
         <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="relative flex items-center justify-between">
             <Link to="/" className="inline-flex items-center">
-              <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
-                Quiz Tour
+              <span className="ml-2 flex text-xl font-bold tracking-wide text-gray-800">
+                <span>
+                  <AcademicCapIcon className="h-6 w-8" />
+                </span>
+                <p> Quiz Tour</p>
               </span>
             </Link>
             <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -80,8 +84,11 @@ function Header() {
                     <div className="flex items-center justify-between mb-4">
                       <div>
                         <Link to="/" className="inline-flex items-center">
-                          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                            Quiz Tour
+                          <span className="ml-2 flex text-xl font-bold tracking-wide text-gray-800 uppercase">
+                            <span>
+                              <AcademicCapIcon className="h-6 w-8" />
+                            </span>
+                            <p> Quiz Tour</p>
                           </span>
                         </Link>
                       </div>
