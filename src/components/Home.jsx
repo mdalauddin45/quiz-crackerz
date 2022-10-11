@@ -24,7 +24,7 @@ const Home = () => {
               <Link
                 rel="noopener noreferrer"
                 to="/quizs"
-                className="px-8 py-3 text-lg font-semibold rounded bg-violet-400 text-gray-900"
+                className="px-8 py-3 text-lg font-semibold rounded bg-violet-400 text-white"
               >
                 GO TO QUIZ
               </Link>
