@@ -1,4 +1,5 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
 import {
   BarChart,
   Bar,
@@ -10,32 +11,11 @@ import {
 } from "recharts";
 
 const Statistics = () => {
-  const data = [
-    {
-      name: "React",
-      total: 8,
-      id: 1,
-    },
-    {
-      name: "javaScript",
-      total: 9,
-      id: 2,
-    },
-    {
-      name: "CSS",
-      total: 8,
-      id: 3,
-    },
-    {
-      name: "Git",
-      total: 11,
-      id: 4,
-    },
-  ];
-
+  const loaderData = useLoaderData();
+  const data = loaderData.data;
   return (
-    <div className="">
-      <BarChart width={730} height={250} data={data}>
+    <div className="container md:px-0 md:py-0 lg:px-10 lg:py-6 mx-auto  mt-28 mb-28 lg:mb-60">
+      <BarChart width={450} height={250} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
