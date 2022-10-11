@@ -13,10 +13,10 @@ const Quiz = ({ quiz }) => {
         alt=""
       />
       <div className="flex justify-between">
-        <p className="mb-2">
+        <h6 className="mb-2">
           <span className="text-xl font-bold"> {name}</span> <br />
           <p>Total Question {total}</p>
-        </p>
+        </h6>
 
         <Link
           to={`../quiz/${id}`}
