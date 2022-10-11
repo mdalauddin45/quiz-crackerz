@@ -3,11 +3,11 @@ import React from "react";
 function Blog() {
   return (
     <div>
-      <div className=" dark:text-gray-900">
-        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-xl ">
+      <div className=" dark:text-gray-900 mt-5">
+        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-xl">
           <div className="mt-4">
             <p className="text-2xl font-bold">
-              What is the purpose of react router?
+              1. What is the purpose of react router?
             </p>
             <p className="mt-2">
               React Router is a standard library for routing in React. It
@@ -19,7 +19,7 @@ function Blog() {
         </div>
         <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-xl ">
           <div className="mt-4">
-            <p className="text-2xl font-bold">how does context api work?</p>
+            <p className="text-2xl font-bold">2. how does context api work?</p>
             <p className="mt-2">
               The React Context API is a way for a React app to effectively
               produce global variables that can be passed around. This is the
@@ -31,7 +31,7 @@ function Blog() {
         </div>
         <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-xl ">
           <div className="mt-4">
-            <p className="text-2xl font-bold">Useref hook in react :</p>
+            <p className="text-2xl font-bold">3. Useref hook in react :</p>
             <p className="mt-2">
               The useRef Hook allows you to persist values between renders. It
               can be used to store a mutable value that does not cause a
